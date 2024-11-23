@@ -1,0 +1,36 @@
+
+
+.testiemos_esto{
+    position: relative;
+}
+.hand {
+    width: 50px;
+    height: 50px;
+    background: url('/img/hand-icon.png') no-repeat center center; /* Reemplaza 'hand-icon.png' con la imagen de la mano que prefieras */
+    background-size: contain;
+    position: relative;
+    
+}
+.hand-container {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 10; /* Superpone este div sobre otros elementos */
+    bottom:30px;
+    right: 30px;
+}
+
+@keyframes clickAnimation {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(0.9); /* Simula el clic reduciendo ligeramente el tamaño */
+    }
+}
+
+.hand-click-animation {
+    animation: clickAnimation 1s infinite; /* Repite la animación del clic indefinidamente */
+}

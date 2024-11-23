@@ -1,0 +1,8 @@
+.mouse_parte1,.scroller{
+    border: 2px solid var(--gray);
+}
+.mouse_container{
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
